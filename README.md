@@ -1,21 +1,21 @@
 # lagou-spider
 拉勾网数据爬虫
 
-#说明:
-	#这个代码是拉勾网爬虫, 爬取拉勾网的会计岗位数据, 并且对数据做了大数据分析分析
+# 说明:
+这个代码是拉勾网爬虫, 爬取拉勾网的会计岗位数据, 并且对数据做了大数据分析分析
 
-#依赖
-	#pip3 install requests
-	#pip3 install pymysql
-	#pip3 install pyquery
+# 依赖
+pip3 install requests
+pip3 install pymysql
+pip3 install pyquery
 
-#执行方式
-	python3 lagou.py
+# 执行方式
+python3 lagou.py
 	
 
 
-#建表的指令
-'''
+# 建表的指令
+```
 CREATE TABLE `job` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `companyId` bigint(4) DEFAULT NULL,
@@ -70,4 +70,4 @@ CREATE TABLE `job` (
   `lagou_src` varchar(128) DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
-'''
+```
